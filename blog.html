@@ -3,17 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <p> Question-1: What are the different ways to select an element in the DOM?</p>
-   <p></p>
-   <p> Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
-<p>Question-3: What is event delegation in the DOM?</p>
-<p></p> 
-<p> Question-4: What is event bubbling in the DOM?</p>   
-<p>Question-5: How do you create, add, and remove elements using JavaScript?</p>
- <p></p>
+    <title>Ass-5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style/style.css">
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+</head>
+<body class=" bg-slate-300 poppins md:container mx-auto mb-8">
+    <div class="w-10/12 mx-auto mb-8 flex items-center justify-between bg-white p-4 shadow rounded-2xl" >
+        <div class=" flex gap-3">
+            <img class="w-fit" src="assets/logo.png" alt="">
+        <div class="text-4xl  ">Dev<span class="text-black font-bold">Board</span></div>
+        </div>
+        <button id="backToDesk"  class="bg-blue-600 text-white text-sm p-3 rounded-lg">Back to Desk</button>
+        </div>
+        <h1 class="text-black font-bold text-3xl text-center align-middle mb-5 ">Blogs</h1> 
+
+        <div class=" w-10/12  mx-auto box-container pt-4 pb-4 space-x-3 space-y-5 bg-blue-50  rounded-t-lg shadow ">
+           <p class="p-3"> Question-1: What are the different ways to select an element in the DOM?</p>
+            </div>
+          
+           <div class=" w-10/12  mx-auto box-container pt-4 pb-4 space-x-3 space-y-5 bg-blue-50 rounded-b-lg  shadow mb-2 p-3">Ans:There are the some different ways to select an element in the DOM : <br>
+                1. getElementById(); <br>
+                2. getElementsByClassName(); <br>
+                3. getElementsByTagName(); <br>
+                4. querySelectorAll(); <br>
+                5. querySelector()
+            </div>                                 
+        <div class="w-10/12  mx-auto box-container pt-4 pb-4 space-x-3 space-y-5 bg-blue-50  rounded-t-lg shadow ">
+            <!-- .... -->
+          <p class="p-3">Question-2: What is the difference between innerHTML,innerText,and textContent? </p>
+            </div>
+            <div class="w-10/12  mx-auto box-container pt-4 pb-4 space-x-3 space-y-5 bg-blue-50 rounded-b-lg  shadow mb-2 p-3">
+              Ans:  The difference between innerHTML,innerText,and textContent are- <br>
+              1. innerHTML: innerHTML is used for set the html element. <br>
+              2.innerText:innerText is used for to display the text. <br>
+              3. textContent: textContent is used for display all text content even hidden ones.
+                </div>
+            
+        <div class="w-10/12  mx-auto box-container pt-4 pb-4 space-x-3 space-y-5 bg-blue-50  rounded-t-lg shadow ">
+            <!-- .... -->
+          <p class="p-3">Question-3: What is event delegation in the DOM?</p>
+            </div>
+            <div class="w-10/12  mx-auto box-container pt-4 pb-4 space-x-3 space-y-5 bg-blue-50 rounded-b-lg  shadow mb-2 p-3">
+                Ans:Event delegation in the DOM is added or removed elements dynamically and uses for less memory.
+            </div>
+            
+        <div class="w-10/12  mx-auto box-container pt-4 pb-4 space-x-3 space-y-5 bg-blue-50  rounded-t-lg shadow ">
+            <!-- .... -->
+          <p class="p-3">  Question-4: What is event bubbling in the DOM?</p>
+            </div>
+            <div class="w-10/12  mx-auto box-container pt-4 pb-4 space-x-3 space-y-5 bg-blue-50 rounded-b-lg  shadow mb-2 p-3">
+             Ans:Event bubbling in the DOM is bubbles up continues until the event reaches the root of the document and triggers its event listener.
+            </div>
+            
+            <div class="w-10/12  mx-auto box-container pt-4 pb-4 space-x-3 space-y-5 bg-blue-50  rounded-t-lg shadow ">
+            <!-- .... -->
+          <p class="p-3">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+             </div> 
+             <div class="w-10/12  mx-auto box-container pt-4 pb-4 space-x-3 space-y-5 bg-blue-50 rounded-b-lg  shadow mb-2 p-3">
+            Ans:Create, add, and remove elements using JavaScript are- <br>
+            1.Create:document.createElement(); <br>
+            2.Add:document.createElement() Then <br>
+            document.body.appendChild() or <br>
+            document.body.append() .
+            3.const parents=document.getElementById('parents'); <br>
+            parent.remove(); <br>
+            const parent=document.getElementById('parent'); <br>
+            const elementToRemove=document.getElementById('element-to-remove'); <br>
+              parent.removeChild(element-to-remove);
+             </div>
+            
+            <script src="js/exchange.js"></script>
 </body>
 </html>

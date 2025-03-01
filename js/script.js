@@ -29,7 +29,7 @@ updateDate();
 document.getElementById("new-page-open")
 .addEventListener("click",function(){
     window.location.href="blog.html"
-})
+});
 
 
 let clickedCount = 0;
