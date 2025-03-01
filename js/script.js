@@ -35,7 +35,7 @@ document.getElementById("new-page-open")
 let clickedCount = 0;
     
 function handleClick(button, divName) {
-        alert(`Button in ${divName} clicked!`);
+        alert(`Board updated succesfully`);
        button.disabled = true;
     
     let countDownElement = document.getElementById("countDown");
@@ -48,12 +48,12 @@ function handleClick(button, divName) {
     let logSection = document.getElementById("logSection");
     let currentTime = new Date().toLocaleTimeString();
     let p = document.createElement("p");
-    p.innerText = `${divName} - Clicked at ${currentTime}`;
+    p.innerText = `${divName} at ${currentTime}`;
     logSection.appendChild(p);
    
     clickedCount++;
       if (clickedCount === 6) {
-        alert("All buttons are clicked!");
+        alert("Congrates! You have completed all the current task");
         disableAllButtons();
     }
 }
@@ -69,7 +69,6 @@ function disableAllButtons() {
 
 function clearLogs() {
     let logSection = document.getElementById("logSection");
-    if (logSection.children.length > 0) {
-        logSection.removeChild(logSection.children[0]);
-    }
+   logSection.innerHTML=" ";
 }
+
