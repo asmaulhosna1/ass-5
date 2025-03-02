@@ -49,6 +49,12 @@ function handleClick(button, divName) {
     let currentTime = new Date().toLocaleTimeString();
     let p = document.createElement("p");
     p.innerText = `${divName} at ${currentTime}`;
+    p.style.marginBottom="15px";
+    p.style.border="1px solid black";
+    p.style.border="none";
+    p.style.backgroundColor="#f1f5fd";
+    p.style.borderRadius="10px";
+    p.style.boxShadow="2px 2px 5px rgba(0, 0, 0, 0.1";
     logSection.appendChild(p);
    
     clickedCount++;
